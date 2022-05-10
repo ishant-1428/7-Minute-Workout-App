@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        tools:background="@color/black"
+        android:id="@+id/toolbar_finish_activity"
+        app:titleTextColor="@color/black"
+        android:theme="@style/ToolbarTheme"
+        />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:textColor="@color/app_green"
+        android:textSize="36sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end"
+        android:layout_marginTop="35dp"
+        />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/item_circular_ripple_border_background"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/done"
+            android:src="@drawable/ic_tick" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Congratulations!"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have finished the Workout!"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@color/app_green"
+        android:text="FINISH"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        />
+
+</LinearLayout>
